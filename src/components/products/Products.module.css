@@ -42,7 +42,7 @@
 .product{
     width: 12rem;
     height: 8rem;
-    background-color: white;
+    background-color: rgb(202, 249, 202);
     position: relative;
     overflow: hidden;
     padding: 1rem;

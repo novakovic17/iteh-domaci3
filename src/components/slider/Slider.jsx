@@ -17,6 +17,7 @@ const Slider = () => {
         navigation = {true}
         spaceBetween = {40} 
         slidesPerGroup = {1}
+        /*slidesPerView = {3} */
         loop = {true}> 
             {SliderProducts.map((slide,i) =>(
                 <SwiperSlide key={i}>
@@ -28,7 +29,7 @@ const Slider = () => {
                         <span>{slide.price}$</span>
                         <div>Shop now</div>
                     </div>
-                    <img src={slide.img} alt="product" className='img-p' />
+                    <img src={slide.img} alt="product" className="img-p" />
                 </SwiperSlide>
 ))}
 

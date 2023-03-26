@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import css from './Products.module.css'
 import Plane from '../../assets/plane.png'
-import {ProductsData} from '../../data/products.js'
+import {ProductsData} from '../../data/products'
 
 const Products = () => {
 
@@ -9,7 +9,7 @@ const Products = () => {
 
     const filter = (type) => (
         setMenuProducts (ProductsData.filter((product)=>product.type === type))
-    )
+    );
 
 
   return (
@@ -37,7 +37,7 @@ const Products = () => {
                             <span>{product.price}$</span>
                             <div>Shop Now</div>
                         </div>
-                        <img src="product.img" alt="" className="img-p"/>
+                        <img src={product.img} alt="" className="img-p"/>
                     </div>
                     ))}
             </div>
