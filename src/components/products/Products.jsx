@@ -35,7 +35,7 @@ const Products = () => {
                                 <span>{product.detail}</span>
                             </div>
                             <span>{product.price}$</span>
-                            <div>Shop Now</div>
+                            <button className='btn1'>Add to cart</button>
                         </div>
                         <img src={product.img} alt="" className="img-p"/>
                     </div>
