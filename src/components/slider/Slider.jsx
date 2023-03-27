@@ -1,11 +1,11 @@
-import React from 'react'
-import {Swiper, SwiperSlide} from "swiper/react"
-import { Pagination, Navigation } from 'swiper'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-import {SliderProducts} from '../../data/products'
-import './Slider.css'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { SliderProducts } from '../../data/products';
+import './Slider.css';
 
 const Slider = () => {
   return (
@@ -17,7 +17,8 @@ const Slider = () => {
         navigation = {true}
         spaceBetween = {40} 
         slidesPerGroup = {1}
-        /*slidesPerView = {3} */
+        slidesPerView={3}
+        centeredSlides={true}
         loop = {true}> 
             {SliderProducts.map((slide,i) =>(
                 <SwiperSlide key={i}>
@@ -29,7 +30,8 @@ const Slider = () => {
                         <span>{slide.price}$</span>
                         <div>Shop now</div>
                     </div>
-                    <img src={slide.img} alt="product" className="img-p" />
+                    <img src={slide.img} alt="products" className="img-p" />
+                    
                 </SwiperSlide>
 ))}
 
@@ -39,3 +41,6 @@ const Slider = () => {
 };
 
 export default Slider;
+
+
+

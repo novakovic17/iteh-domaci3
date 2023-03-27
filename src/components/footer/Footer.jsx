@@ -12,7 +12,7 @@ const Footer = () => {
     <div className={css.block}>
         <div className={css.detail}>
             <span>Contact us</span>
-            <span class name ={css.pngLine}>
+            <span className ={css.pngLine}>
             <LocationMarkerIcon className = {css.icon}/>
             <span>111 north avenue Orlando, FL 32801</span>
             </span>
@@ -26,7 +26,7 @@ const Footer = () => {
     <div className={css.block}>
         <div className={css.detail}>
             <span>Company</span>
-            <span class name = {css.pngLine}>
+            <span className = {css.pngLine}>
             <UsersIcon className = {css.icon}/>
             <span>About us</span>
             </span>
@@ -36,7 +36,7 @@ const Footer = () => {
     <div className={css.block}>
         <div className={css.detail}>
             <span>Resources</span>
-            <span class name = {css.pngLine}>
+            <span className = {css.pngLine}>
             <LinkIcon className = {css.icon}/>
             <span>Safety Privacy & Terms</span>
             </span>
