@@ -27,13 +27,10 @@
     background-color: lightgreen;
 }
 
-
-
-
-
 .h_sides{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 0 1rem;
 }
 
 .text1{
@@ -42,6 +39,7 @@
     width: min-content;
     display: black;
     font-weight: 600;
+    padding: 0 1rem;
 }
 
 .text2{
@@ -49,35 +47,42 @@
     flex-direction: column;
     width: min-content;
     color: black;
+    padding: 0 1rem;
 }
 
 .text2>:first-child{
     font-weight: 800;
     font-size: 2.5rem;
+    padding: 0 1rem;
 }
 
 .text1>:nth-child(2){
     display: blok;
+    padding: 0 1rem;
 }
 
 .traffic{
     display: flex;
     flex-direction: column;
     text-align: right;
+    padding: 0 1rem;
 }
 
 .traffic>:first-child{
     font-weight: 800;
     font-size: 2.5rem;
+    padding: 0 1rem;
 }
 
 .customers{
     display: flex;
     flex-direction: column;
     text-align: right;
+    padding: 0 1rem;
 }
 
 .customers>:first-child{
     font-weight: 800;
     font-size: 2.5rem;
+    padding: 0 1rem;
 }

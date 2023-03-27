@@ -17,9 +17,7 @@ function Hero() {
     
     <div className={css.text2}>
         <span>Trendy Collection</span>
-        <span>
-            {" "}
-            Seedily say has suitable disposal and boy. Exercise joy man children rejoiced.</span>
+        <span>Seedily say has suitable disposal and boy. Exercise joy man children rejoiced.</span>
     </div>
     </div>
 
