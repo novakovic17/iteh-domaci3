@@ -20,8 +20,10 @@
     height: 23rem;
     border-radius: 50%;
     z-index: -99;
-    position: center;
+    position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: lightgreen;
 }
 

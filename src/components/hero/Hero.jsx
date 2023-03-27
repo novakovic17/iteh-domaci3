@@ -1,10 +1,13 @@
 import React from 'react'
 import css from './Hero.module.css'
 import HeroImg from '../../assets/back.png'
-import {RiShoppingBagFill} from 'react-icons/ri'
+import {motion} from "framer-motion"
 
 
 function Hero() {
+
+    const transition = {duration: 3, type: "spring"}
+
   return (
     <div className={css.container}>
 
@@ -22,12 +25,20 @@ function Hero() {
 
     {/*middle side hero image */}
     <div className={css.wrapper}>
-        <div className={css.circle}>
-            <img src={HeroImg} alt="" width ={400} />
-            <div className={css.cart2}>
-                <RiShoppingBagFill/>
-            </div>
-        </div>
+
+        <motion.div
+        initial={{bottom: "2rem"}}
+        whileInView = {{bottom:"0rem"}}
+        className={css.circle}
+        transition={transition}>
+        </motion.div>
+        
+        <motion.img 
+        transition={transition}
+        initial ={{bottom: "-2rem"}}
+        whileInView = {{bottom: "0rem"}}  
+        src={HeroImg} alt="" width ={400} />
+    
     </div>
 
     {/*right side */}
@@ -41,12 +52,7 @@ function Hero() {
             <span>Happy Custumers</span>
         </div>
     </div>
-
-
-
-
     </div>
-
     )
 }
 
