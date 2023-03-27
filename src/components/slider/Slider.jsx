@@ -28,7 +28,6 @@ const Slider = () => {
                             <span>{slide.detail}</span>
                         </div>
                         <span>{slide.price}$</span>
-                        <div>Shop now</div>
                     </div>
                     <img src={slide.img} alt="products" className="img-p" />
                     
