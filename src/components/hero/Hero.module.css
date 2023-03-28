@@ -86,3 +86,16 @@
     font-size: 2.5rem;
     padding: 0 1rem;
 }
+
+@media screen and (max-width: 640px){
+    .circle{
+        top: 0;
+        width: 16rem;
+        height: 72%;
+    }
+.wrapper{
+    top: 3rem;
+    width: 16rem;
+    height: 15rem;
+}
+}
