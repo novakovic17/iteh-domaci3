@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Products from './components/products/Products';
 import Slider from './components/slider/Slider';
-import AboutUs from './AboutUs';
+import AboutUs from './aboutus/AboutUs';
 
 function App() {
   return (
