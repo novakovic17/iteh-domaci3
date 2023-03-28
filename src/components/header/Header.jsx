@@ -14,10 +14,10 @@ const Header = () => {
 
       <div className={css.right}>
         <div className={css.menu}>
-          <ul>
+          <ul className={css.menu}></ul>
             <li><Link to="/aboutus">About Us</Link></li>
             <li>ENG</li>
-          </ul>
+         
         </div>
       </div>
     </div>

@@ -87,15 +87,38 @@
     padding: 0 1rem;
 }
 
-@media screen and (max-width: 640px){
-    .circle{
-        top: 0;
-        width: 16rem;
-        height: 72%;
+@media only screen and (max-width: 600px) {
+    .container {
+    display: flex;
+    flex-direction: column;
     }
-.wrapper{
-    top: 3rem;
-    width: 16rem;
-    height: 15rem;
-}
-}
+    .h_sides {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+    .text1 {
+    font-size: 15px;
+    }
+    .text2 {
+    font-size: 10px;
+    }
+    .traffic,
+    .customers {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .traffic span,
+    .customers span {
+    font-size: 8px;
+    }
+    .wrapper {
+    margin: 20px 0;
+    }
+    .circle {
+    display: none;
+    }
+    .container img {
+    width: 100%;
+    }
+    }
