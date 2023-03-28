@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './Footer.module.css';
-import{InboxIcon, PhoneIcon, LocationMarkerIcon, LoginIcon,UsersIcon,LinkIcon} from "@heroicons/react/outline";
+import{PhoneIcon, LocationMarkerIcon,UsersIcon,LinkIcon} from "@heroicons/react/outline";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -26,10 +27,12 @@ const Footer = () => {
     <div className={css.block}>
         <div className={css.detail}>
             <span>Company</span>
-            <span className = {css.pngLine}>
-            <UsersIcon className = {css.icon}/>
-            <span>About us</span>
-            </span>
+            <Link to="/aboutus">
+  <span className={css.pngLine}>
+    <UsersIcon className={css.icon} />
+    <span>About us</span>
+  </span>
+</Link>
         </div>
     </div>
 
