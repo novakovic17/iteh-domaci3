@@ -15,8 +15,9 @@ const Header = () => {
       <div className={css.right}>
         <div className={css.menu}>
           <ul className={css.menu}></ul>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/aboutus">About Us</Link></li>
-            <li>ENG</li>
+            <>ENG</>
          
         </div>
       </div>
