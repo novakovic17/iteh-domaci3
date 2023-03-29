@@ -4,12 +4,11 @@ import { Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { SliderProducts } from '../../data/products';
+import { ProductsData } from '../../data/products';
 import './Slider.css';
 
 const Slider = () => {
   return (
-
     <div className="s-container">
         <Swiper 
 
@@ -20,8 +19,6 @@ const Slider = () => {
                 slidesPerView:1
             }}
         }   
-
-
         modules={[Pagination, Navigation]}
         className = "mySwiper"
         navigation = {true}
@@ -30,7 +27,7 @@ const Slider = () => {
         slidesPerView={3}
         centeredSlides={true}
         loop = {true}> 
-            {SliderProducts.map((slide,i) =>(
+            {ProductsData.map((slide,i) =>(
                 <SwiperSlide key={i}>
                     <div className="left-s">
                         <div className="name">
@@ -40,10 +37,8 @@ const Slider = () => {
                         <span>{slide.price}$</span>
                     </div>
                     <img src={slide.img} alt="products" className="img-p" />
-                    
                 </SwiperSlide>
 ))}
-
        </Swiper>
     </div>
     );
